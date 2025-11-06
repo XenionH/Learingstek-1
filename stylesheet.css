@@ -45,24 +45,47 @@ background-color: #ff1616;
 }
 
 aside {
-  list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 130px;
+  width: 200px;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
   overflow: auto;
 }
 
-aside li a {
+ul {
+  border: 2px black;
+  border-style: solid;
+  display: block;
+  background-color: #d1d1d1;
+  margin: 30px 10px 10px 10px;
+  padding: 0px;
+  border-radius: 5px;
+  list-style-type: none;
+  
+}
+
+a {
   display: block;
   color: black;
   padding: 8px 16px;
   text-decoration: none;
+  text-align: center;
+  border-bottom: 3px solid black;
 }
 
-aside li a.active {
+li a {
+  border-bottom: 1px solid black;
+}
+
+a.last {
+  border-bottom: none;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+aside ul li a.active {
   background-color: #04AA6D;
   color: white;
 }
@@ -73,7 +96,7 @@ aside li a:hover:not(.active) {
 }
 
 div {
-margin-left:130px;
+margin-left:210px;
 padding:1px 16px;
 height:1000px;
 }
