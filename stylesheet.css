@@ -3,27 +3,77 @@ body {
   padding: 0;
 }
 
+header {
+  margin: 0;
+  padding: 0;
+}
 
 nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  display: flex;
   background-color: #333333;
+  position: sticky;
+  top: 0;
+  font-size: 28px;
 }
 
 nav li {
   float: left;
+  border-right: 1px solid white;
+}
+
+nav li:last-child {
+  border-right: none;  
 }
 
 nav li a {
   display: block;
+  padding: 14px 36px;
   color: white;
   text-align: center;
-  padding: 14px 30px;
   text-decoration: none;
 }
 
 nav li a:hover {
-  background-color: #ff1616;
+  background-color: #111111;
+}
+
+nav li a.active {
+background-color: #ff1616;
+}
+
+aside {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+aside li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+aside li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+aside li a:hover:not(.active) {
+  background-color: #555555;
+  color: white;
+}
+
+div {
+margin-left:130px;
+padding:1px 16px;
+height:1000px;
 }
