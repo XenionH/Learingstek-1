@@ -2,37 +2,43 @@
 <html>
 <head>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="script" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    
-    <nav>
+    <div class="topnav">
         <li><a href="index.html">Hjem</a></li> 
         <li><a href="teori.html">Teori</a></li>
         <li><a class="active" href="opgaver.html">Opgaver</a></li>
         <li><a href="story.html">Story/Map</a></li>
-    </nav>
+    </div>
 
-    <aside>
+    <div class="sidenav">
         <ul>
-            <a>Variables</a>
+            <a id="category">Variables</a>
             <li><a href="#int">int</a></li>
-            <li><a class="last" href="#bool">bool</a></li>
+            <li><a id="last" href="#bool">bool</a></li>
         </ul>
     
         <ul class="last">
-            <a>Conditionals</a>
-            <li><a href="#if">if</a></li>
-            <li><a class="last" href="#if/else">if/else</a></li>
+            <a id="category">Conditionals</a>
+            <button class="dropdown-btn"> if opgaver <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <li><a href="#if/1">if opg. 1</a></li>
+                <li><a href="#if/2">if opg. 2</a></li>
+                <li><a href="#if/3">if opg. 3</a></li>
+                <li><a href="#if/4">if opg. 4</a></li>
+            </div>
+            <li><a id="last" href="#if/else">if/else</a></li>
         </ul>
-    </aside>
+    </div>
 
-    <div>
+    <div class="main">
         <h1>SEEEVEN</h1>
     </div>
-</body>
 
+</body>
+<script src="script.js"></script>
 
 
 </html>
