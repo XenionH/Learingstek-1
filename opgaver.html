@@ -29,12 +29,26 @@
                 <li><a href="#if/3">if opg. 3</a></li>
                 <li><a href="#if/4">if opg. 4</a></li>
             </div>
-            <li><a id="last" href="#if/else">if/else</a></li>
+            <button class="dropdown-btn" id="last" href="#if/else">if/else opgaver <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container" id="last">
+                <li><a href="#if/1">if/else opg. 1</a></li>
+                <li><a href="#if/2">if/else opg. 2</a></li>
+                <li><a href="#if/3">if/else opg. 3</a></li>
+                <li><a href="#if/4" id="last">if/else opg. 4</a></li>
+            </div>
         </ul>
     </div>
 
     <div class="main">
         <h1>SEEEVEN</h1>
+
+        <p>Drag the "Six Seven image" back and forth between the two div elements.</p>
+
+        <div id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+        <img id="img1" src="sources/download.jpg" draggable="true" ondragstart="dragstartHandler(event)" width="88" height="31">
+        </div>
+
+        <div id="div2" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
     </div>
 
 </body>
