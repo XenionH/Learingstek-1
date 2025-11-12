@@ -1,13 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  margin: 0;
-  padding: 0;
-}
-
 .topnav {
   list-style-type: none;
   margin: 0;
@@ -19,16 +9,16 @@ header {
   font-size: 24px;
 }
 
-.topnav li {
+.topnavlink {
   float: left;
   border-right: 1px solid white;
 }
 
-.topnav li:last-child {
+.topnavlink:last-child {
   border-right: none;
 }
 
-.topnav li a {
+.topnavlink a {
   display: block;
   padding: 14px 36px;
   color: #a1a1a1;
@@ -36,12 +26,12 @@ header {
   text-decoration: none;
 }
 
-.topnav li a:hover {
+.topnavlink a:hover {
   background-color: #111111;
   color: #f1f1f1;
 }
 
-.topnav li a.active {
+.topnavlink a.active {
   background-color: #ff1616;
   color: #f1f1f1;
 }
@@ -51,8 +41,9 @@ header {
   width: 200px;
   position: fixed;
   z-index: 1;
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
+  padding-right: 10px;
   background-color: #f1f1f1;
   overflow-x: hidden;
   padding-top: 20px;
@@ -69,7 +60,7 @@ header {
 }
 
 .sidenav ul a,
-.dropdown-btn {
+.dropdown_btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -85,15 +76,15 @@ header {
 }
 
 .sidenav ul li a,
-.dropdown-btn {
+.dropdown_btn {
   cursor: pointer;
 }
 
-.dropdown-btn {
+.dropdown_btn {
   width: 100%;
 }
 
-.dropdown-container li:last-child {
+.dropdown_container li:last-child {
   border-bottom: none;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -111,17 +102,17 @@ header {
 }
 
 .sidenav li a:hover,
-.dropdown-btn:hover {
+.dropdown_btn:hover {
   color: #f1f1f1;
   background-color: #c1c1c1;
 }
 
-.dropdown-container {
+.dropdown_container {
   display: none;
   border-bottom: 1px solid black;
 }
 
-.dropdown-container li a {
+.dropdown_container li a {
   background-color: #e1e1e1;
   padding-left: 28px;
   border: none;
