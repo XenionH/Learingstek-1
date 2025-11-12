@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#left, #right{
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    border: 2px dashed #fff;
+    border-radius: 5px;
+}
+
+.list{
+    background: hotpink;
+    height: 60px;
+    margin: 30px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: grab;
+    border-radius: 10px;
+}
