@@ -4,7 +4,7 @@ export function Map() {
   return (
     <>
       <h1>Hey</h1>
-      <Link to="/pages/Teori.tsx"> click here</Link>
+      <Link to="/Teori.tsx"> click here</Link>
     </>
   );
 }
