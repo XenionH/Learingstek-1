@@ -1,58 +1,41 @@
 import styles from "./Navbar.module.css";
 
 function SideNav() {
+  const items1 = ["int", "bool"];
+  const items2 = ["if", "if/else"];
+  const subItems2_1 = ["if opg. 1", "if opg. 2", "if opg. 3", "if opg. 4"];
+
   return (
-    <div className={styles.sidenav}>
-      <ul>
-        <a id="category">Variables</a>
-        <li>
-          <a href="#int">int</a>
-        </li>
-        <li>
-          <a id="last" href="#bool">
-            bool
-          </a>
-        </li>
+    <div className={styles.sidebar}>
+      <ul className={styles.sidenav}>
+        <a className={styles.sidenavtext} id="category">
+          Variables
+        </a>
+        {items1.map((item) => (
+          <li key={item} className={styles.sidenavlink}>
+            <a>{item}</a>
+          </li>
+        ))}
       </ul>
 
-      <ul className={styles.last}>
-        <a id="category">Conditionals</a>
-        <button className={styles.dropdown_btn}>
-          if opgaver <i className="fa fa-caret-down"></i>
-        </button>
-        <div className={styles.dropdown_container}>
-          <li>
-            <a href="#if/1">if opg. 1</a>
-          </li>
-          <li>
-            <a href="#if/2">if opg. 2</a>
-          </li>
-          <li>
-            <a href="#if/3">if opg. 3</a>
-          </li>
-          <li>
-            <a href="#if/4">if opg. 4</a>
-          </li>
-        </div>
-        <button className={styles.dropdown_btn} id="last">
-          if/else opgaver <i className="fa fa-caret-down"></i>
-        </button>
-        <div className={styles.dropdown_container} id="last">
-          <li>
-            <a href="#if/1">if/else opg. 1</a>
-          </li>
-          <li>
-            <a href="#if/2">if/else opg. 2</a>
-          </li>
-          <li>
-            <a href="#if/3">if/else opg. 3</a>
-          </li>
-          <li>
-            <a href="#if/4" id="last">
-              if/else opg. 4
-            </a>
-          </li>
-        </div>
+      <ul className={styles.sidenav}>
+        <a className={styles.sidenavtext} id="category">
+          Conditionals
+        </a>
+        {items2.map((item) => (
+          <>
+            <button key={item} className={styles.dropdown_btn}>
+              {item}
+            </button>
+            <div className={styles.dropdown_container}>
+              {subItems2_1.map((item2_1) => (
+                <li key={item2_1} className={styles.sidenavlink}>
+                  <a className="innerlink">{item2_1}</a>
+                </li>
+              ))}
+            </div>
+          </>
+        ))}
       </ul>
     </div>
   );

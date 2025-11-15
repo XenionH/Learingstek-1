@@ -1,14 +1,23 @@
-import Navbar from "./Components/Navbar";
 import "./Index.css";
-import SideNav from "./Components/SideNav";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/home";
+import { Layout } from "./Layout";
+import { Teori } from "./pages/Teori";
+import { Opgaver } from "./pages/Opgaver";
+import { Map } from "./pages/Map";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <SideNav />
-      <p> Six Seven </p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route element={<Layout />}>
+          <Route path="/Teori" element={<Teori />} />
+          <Route path="/Opgaver" element={<Opgaver />} />
+          <Route path="/Map" element={<Map />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

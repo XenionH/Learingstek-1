@@ -3,7 +3,9 @@ body {
   padding: 0px;
 }
 
-p {
+section {
   margin: 10px;
   padding: 10px;
+  padding-left: 220px;
+  font-size: 24px;
 }

@@ -24,42 +24,41 @@
   color: #a1a1a1;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.topnavlink a:hover {
+.topnavlink:hover:not(.topnavactive) {
   background-color: #111111;
   color: #f1f1f1;
 }
 
-.topnavlink a.active {
+.topnavactive {
   background-color: #ff1616;
   color: #f1f1f1;
 }
 
-.sidenav {
+.sidebar {
   height: 100%;
   width: 200px;
+  display: block;
   position: fixed;
   z-index: 1;
-  margin: 10px;
-  padding: 10px;
   padding-right: 10px;
   background-color: #f1f1f1;
   overflow-x: hidden;
-  padding-top: 20px;
 }
 
-.sidenav ul {
-  border: 2px black;
+.sidenav {
+  border: 3px black;
   border-style: solid;
   display: block;
   margin: 30px 10px 10px 10px;
   padding: 0px;
-  border-radius: 5px;
+  border-radius: 4px;
   list-style-type: none;
 }
 
-.sidenav ul a,
+.sidenavlink,
 .dropdown_btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -73,35 +72,40 @@
   outline: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
+  cursor: pointer;
 }
 
-.sidenav ul li a,
-.dropdown_btn {
-  cursor: pointer;
+.sidenavtext {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  background-color: #a8a8a8;
+  display: block;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: left;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
 }
 
 .dropdown_btn {
   width: 100%;
 }
 
-.dropdown_container li:last-child {
+.last {
   border-bottom: none;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
-#last {
-  border-bottom: none;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.sidenav a#category {
+.category {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 
-.sidenav li a:hover,
+.sidenavlink:hover,
 .dropdown_btn:hover {
   color: #f1f1f1;
   background-color: #c1c1c1;
@@ -112,7 +116,7 @@
   border-bottom: 1px solid black;
 }
 
-.dropdown_container li a {
+.innerlink {
   background-color: #e1e1e1;
   padding-left: 28px;
   border: none;
