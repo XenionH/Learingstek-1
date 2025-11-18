@@ -13,7 +13,7 @@ export function NavBar() {
     <>
       <nav className={styles.topnav}>
         {items.map((item) => (
-          <NavLink to={`/${item}`} className={setActive}>
+          <NavLink to={`/${item}`} className={setActive} key={item}>
             <a>{item}</a>
           </NavLink>
         ))}

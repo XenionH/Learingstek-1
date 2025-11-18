@@ -6,9 +6,9 @@ export function Home() {
       <Link to="/Teori">
         <button> Gå igang!</button>
       </Link>
-      <Link to="/Admin">
-        <button>Til lærere</button>
-      </Link>
+      <>
+        <button>Til lærere (WIP)</button>
+      </>
     </>
   );
 }
