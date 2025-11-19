@@ -27,3 +27,7 @@ function dropHandler(ev) {
   const data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
+
+function ClickEvent () {
+  
+}

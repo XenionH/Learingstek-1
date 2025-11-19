@@ -12,11 +12,7 @@ export function DropDown({ items }: Props) {
     <>
       <button
         key={items}
-        className={
-          containerVisible
-            ? `${styles.dropdown_btn} ${styles.dropdown_btn_active}`
-            : styles.dropdown_btn
-        }
+        className={styles.dropdown_btn}
         onClick={() => {
           setContainerVisibility(!containerVisible);
         }}

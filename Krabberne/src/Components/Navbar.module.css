@@ -46,6 +46,7 @@
   padding-right: 10px;
   background-color: #f1f1f1;
   overflow-x: hidden;
+  border-right: 3px solid dimgrey;
 }
 
 .sidenav {

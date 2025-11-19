@@ -1,14 +1,21 @@
 import styles from "./Navbar.module.css";
-
+import React from "react";
 import { DropDown } from "./DropDown";
 
 interface Props {
   items1: string[];
   items2: string[];
   dropdowns: boolean;
+  sendData?: any;
 }
 
-function SideNav({ items1, items2, dropdowns }: Props) {
+function SideNav({ items1, items2, dropdowns, sendData }: Props) {
+  const [data, setData] = React.useState("");
+
+  function handleClick(item: string) {
+    setData(item);
+  }
+
   return (
     <div className={styles.sidebar}>
       <ul className={styles.sidenav}>
@@ -16,9 +23,19 @@ function SideNav({ items1, items2, dropdowns }: Props) {
           Variables
         </a>
         {items1.map((item) => (
-          <li key={item} className={styles.sidenavlink}>
-            <a>{item}</a>
-          </li>
+          <>
+            {dropdowns ? (
+              <DropDown items={item} />
+            ) : (
+              <li
+                key={item}
+                className={styles.sidenavlink}
+                onClick={() => (handleClick(item), sendData(item))}
+              >
+                <a>{item}</a>
+              </li>
+            )}
+          </>
         ))}
       </ul>
       <ul className={styles.sidenav}>
@@ -30,7 +47,11 @@ function SideNav({ items1, items2, dropdowns }: Props) {
             {dropdowns ? (
               <DropDown items={item} />
             ) : (
-              <li key={item} className={styles.sidenavlink}>
+              <li
+                key={item}
+                className={styles.sidenavlink}
+                onClick={() => (handleClick(item), sendData(item))}
+              >
                 <a>{item}</a>
               </li>
             )}
