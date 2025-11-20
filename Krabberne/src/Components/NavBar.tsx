@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export function NavBar() {
   const items = ["Teori", "Opgaver", "Map"];
-  const setActive = ({ isActive }) =>
+  const setActive = ({ isActive }: { isActive: boolean }): string =>
     isActive
       ? `${styles.topnavlink} ${styles.topnavactive}`
       : `${styles.topnavlink}`;

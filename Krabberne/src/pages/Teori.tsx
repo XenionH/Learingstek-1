@@ -7,8 +7,9 @@ import Teori_If_else from "./Subpages/Teori_If_Else";
 import Teori_Start from "./Subpages/Teori_Start";
 
 export function Teori() {
-  let items1 = ["Int", "Bool"];
-  let items2 = ["If", "If-else"];
+  let itemsCategories: string[] = ["categories"];
+  let items1 = ["Int", "Bool, If"];
+  let items2 = null; //"If", "If-else"];
   const [dataFromSideNav, setDataFromSideNav] = React.useState("");
 
   function handleData(data: any) {

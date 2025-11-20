@@ -12,6 +12,7 @@
 .topnavlink {
   float: left;
   border-right: 1px solid white;
+  color: #f1f1f1;
 }
 
 .topnavlink:last-child {
@@ -21,7 +22,7 @@
 .topnavlink a {
   display: block;
   padding: 14px 36px;
-  color: #a1a1a1;
+  color: #f1f1f1;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -29,12 +30,20 @@
 
 .topnavlink:hover:not(.topnavactive) {
   background-color: #111111;
-  color: #f1f1f1;
+  color: #a1a1a1;
+}
+
+.topnavlink a:hover:not(.topnavactive a) {
+  color: #a1a1a1;
 }
 
 .topnavactive {
   background-color: #ff1616;
-  color: #f1f1f1;
+  color: white;
+}
+
+.topnavactive a {
+  color: white;
 }
 
 .sidebar {

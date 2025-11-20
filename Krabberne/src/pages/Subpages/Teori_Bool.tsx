@@ -1,4 +1,3 @@
-import React from "react";
 import Bold_Text from "../../Components/Bold_Text";
 
 const Teori_Bool = () => {
