@@ -21,7 +21,7 @@ export function Home() {
           textDecoration: "none",
           position: "absolute",
           top: "94.8%",
-          left: "28.5%",
+          left: "28.37%",
           transform: "translate(-20%, -50%)",
         }}
       >
@@ -29,7 +29,7 @@ export function Home() {
           style={{
             fontSize: "2rem",
             height: "8vh",
-            width: "23vw",
+            width: "22.8vw",
             position: "relative",
             borderRadius: "50px",
             backgroundColor: "transparent",

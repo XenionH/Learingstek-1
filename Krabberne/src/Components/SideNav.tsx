@@ -3,14 +3,14 @@ import React from "react";
 import { DropDown } from "./DropDown";
 
 interface Props {
-  items1: string[];
-  items2: string[];
+  itemcategories: string[];
+  items?: string[][];
   dropdowns: boolean;
   sendData?: any;
 }
 
-function SideNav({ items1, items2, dropdowns, sendData }: Props) {
-  const [data, setData] = React.useState("");
+function SideNav({ itemcategories, items, dropdowns, sendData }: Props) {
+  const [, setData] = React.useState("");
 
   function handleClick(item: string) {
     setData(item);
@@ -19,42 +19,32 @@ function SideNav({ items1, items2, dropdowns, sendData }: Props) {
   return (
     <div className={styles.sidebar}>
       <ul className={styles.sidenav}>
-        <a className={styles.sidenavtext} id="category">
-          Variables
-        </a>
-        {items1.map((item) => (
+        {items?.map((item, Index) => (
           <>
-            {dropdowns ? (
-              <DropDown items={item} />
-            ) : (
-              <li
-                key={item}
-                className={styles.sidenavlink}
-                onClick={() => (handleClick(item), sendData(item))}
-              >
-                <a>{item}</a>
-              </li>
-            )}
-          </>
-        ))}
-      </ul>
-      <ul className={styles.sidenav}>
-        <a className={styles.sidenavtext} id="category">
-          Conditionals
-        </a>
-        {items2.map((item) => (
-          <>
-            {dropdowns ? (
-              <DropDown items={item} />
-            ) : (
-              <li
-                key={item}
-                className={styles.sidenavlink}
-                onClick={() => (handleClick(item), sendData(item))}
-              >
-                <a>{item}</a>
-              </li>
-            )}
+            <a
+              className={styles.sidenavtext}
+              id="category"
+              style={{ textDecorationLine: "underline", fontSize: "24px" }}
+            >
+              {itemcategories.length > 1
+                ? itemcategories[Index]
+                : `Kategorier:`}
+            </a>
+            {item.map((subItem) => (
+              <>
+                {dropdowns ? (
+                  <DropDown items={subItem} />
+                ) : (
+                  <li
+                    key={subItem}
+                    className={styles.sidenavlink}
+                    onClick={() => (handleClick(subItem), sendData(subItem))}
+                  >
+                    <a>{subItem}</a>
+                  </li>
+                )}
+              </>
+            ))}
           </>
         ))}
       </ul>
@@ -62,10 +52,4 @@ function SideNav({ items1, items2, dropdowns, sendData }: Props) {
   );
 }
 
-/*function toggleDropdown(containerVisible) {
-  return containerVisible
-    ? (containerVisible = false)
-    : (containerVisible = true);
-}
-*/
 export default SideNav;

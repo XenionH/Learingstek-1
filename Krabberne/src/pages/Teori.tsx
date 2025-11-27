@@ -8,8 +8,8 @@ import Teori_Start from "./Subpages/Teori_Start";
 
 export function Teori() {
   let itemsCategories: string[] = ["categories"];
-  let items1 = ["Int", "Bool, If"];
-  let items2 = null; //"If", "If-else"];
+  let items1 = ["Int", "Bool", "If"];
+  //let items2 = ["If", "If-else"];
   const [dataFromSideNav, setDataFromSideNav] = React.useState("");
 
   function handleData(data: any) {
@@ -35,8 +35,8 @@ export function Teori() {
   return (
     <>
       <SideNav
-        items1={items1}
-        items2={items2}
+        itemcategories={itemsCategories}
+        items={[items1]}
         dropdowns={false}
         sendData={handleData}
       />
