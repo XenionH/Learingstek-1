@@ -1,12 +1,15 @@
-.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  background-color: #333333;
-  position: sticky;
-  top: 0;
-  font-size: 24px;
+@layer utilities {
+  .topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #333333;
+    position: sticky;
+    top: 0;
+    font-size: 24px;
+    z-index: 1;
+  }
 }
 
 .topnavlink {
@@ -52,6 +55,7 @@
   width: 200px;
   display: block;
   position: fixed;
+  left: 0;
   z-index: 1;
   padding-right: 10px;
   background-color: #f1f1f1;

@@ -2,7 +2,15 @@ import Bold_Text from "../../Components/Bold_Text";
 
 const Teori_If = () => {
   return (
-    <div>
+    <div
+      style={{
+        fontSize: "21px",
+        position: "relative",
+        display: "block",
+        margin: "10px",
+        paddingBottom: "40px",
+      }}
+    >
       PROFESSOR TANGSALAT <br />
       I klarer jer supergodt unger, jeg kan ikke huske hvornår jeg sidst har set
       så unge krabber have så god en forståelse! <br />

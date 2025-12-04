@@ -1,4 +1,5 @@
-import SideNav from "../Components/SideNav";
+import ContentArea from "../Components/ContentArea";
+import SideBar from "../Components/SideBar";
 
 export function Opgaver() {
   let items = ["Int", "Bool", "If"];
@@ -10,13 +11,16 @@ export function Opgaver() {
 
   return (
     <>
-      <SideNav
-        itemcategories={itemCategories}
-        items={[items]}
-        dropdowns={false}
-        sendData={handledata}
+      <SideBar
+        withSideNav={true}
+        sideNavItemCategories={itemCategories}
+        sideNavItems={[items]}
+        dropdown={false}
+        sendDataFromSideNav={handledata}
       />
-      <section>Hey2</section>
+      <section>
+        <ContentArea version={0}>hey</ContentArea>
+      </section>
     </>
   );
 }

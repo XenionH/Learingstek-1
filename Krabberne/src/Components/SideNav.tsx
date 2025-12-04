@@ -17,7 +17,7 @@ function SideNav({ itemcategories, items, dropdowns, sendData }: Props) {
   }
 
   return (
-    <div className={styles.sidebar}>
+    <div>
       <ul className={styles.sidenav}>
         {items?.map((item, Index) => (
           <>

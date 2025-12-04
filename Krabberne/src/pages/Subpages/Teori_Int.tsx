@@ -2,8 +2,16 @@ import Bold_Text from "../../Components/Bold_Text";
 
 function Teori_Int() {
   return (
-    <div>
-      <h1>PROFESSOR TANGSALAT</h1>
+    <div
+      style={{
+        fontSize: "21px",
+        position: "relative",
+        display: "block",
+        margin: "10px",
+        paddingBottom: "40px",
+      }}
+    >
+      <p>PROFESSOR TANGSALAT</p>
       <p>
         Hvem er klar på at kode??
         <br />

@@ -1,8 +1,15 @@
 import Bold_Text from "../../Components/Bold_Text";
-
 const Teori_Bool = () => {
   return (
-    <div>
+    <div
+      style={{
+        fontSize: "21px",
+        position: "relative",
+        display: "block",
+        margin: "10px",
+        paddingBottom: "40px",
+      }}
+    >
       PROFESSOR TANGSALAT <br /> Velkommen tilbage, krabber! <br />
       <br />
       Så har I lært en masse om <Bold_Text boldText="intergers" />, unger! I er

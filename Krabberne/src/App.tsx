@@ -4,7 +4,7 @@ import { Home } from "./pages/home";
 import { Layout } from "./Layout";
 import { Teori } from "./pages/Teori";
 import { Opgaver } from "./pages/Opgaver";
-import { Map } from "./pages/Map";
+import { Story } from "./pages/Story";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/Teori" element={<Teori />} />
           <Route path="/Opgaver" element={<Opgaver />} />
-          <Route path="/Map" element={<Map />} />
+          <Route path="/Story" element={<Story />} />
         </Route>
       </Routes>
     </BrowserRouter>
