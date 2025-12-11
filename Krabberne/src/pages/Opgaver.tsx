@@ -1,3 +1,4 @@
+import { Outlet } from "react-router";
 import ContentArea from "../Components/ContentArea";
 import SideBar from "../Components/SideBar";
 
@@ -19,7 +20,9 @@ export function Opgaver() {
         sendDataFromSideNav={handledata}
       />
       <section>
-        <ContentArea version={0}>hey</ContentArea>
+        <ContentArea version={0}>
+          <Outlet />
+        </ContentArea>
       </section>
     </>
   );

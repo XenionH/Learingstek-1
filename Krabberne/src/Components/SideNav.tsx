@@ -1,6 +1,7 @@
 import styles from "./Navbar.module.css";
 import React from "react";
 import { DropDown } from "./DropDown";
+import { Link } from "react-router";
 
 interface Props {
   itemcategories: string[];
@@ -19,6 +20,7 @@ function SideNav({ itemcategories, items, dropdowns, sendData }: Props) {
   return (
     <div>
       <ul className={styles.sidenav}>
+        {" "}
         {items?.map((item, Index) => (
           <>
             <a
@@ -35,13 +37,14 @@ function SideNav({ itemcategories, items, dropdowns, sendData }: Props) {
                 {dropdowns ? (
                   <DropDown items={subItem} />
                 ) : (
-                  <li
+                  <Link
+                    to={`${subItem}`}
                     key={subItem}
                     className={styles.sidenavlink}
                     onClick={() => (handleClick(subItem), sendData(subItem))}
                   >
                     <a>{subItem}</a>
-                  </li>
+                  </Link>
                 )}
               </>
             ))}
