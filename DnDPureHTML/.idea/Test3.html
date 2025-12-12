@@ -24,10 +24,10 @@
             ev.preventDefault();
             const data = ev.dataTransfer.getData("text");
            if(IsFull==false) {
-            ev.target.appendChild(document.getElementById(data));
+                ev.currentTarget.appendChild(document.getElementById(data));
            }
            if(IsFull==true){
-                ev.target.appendChild(document.getElementById(data));
+                ev.currentTarget.appendChild(document.getElementById(data));
                 IsFull = false;
            }
         }
@@ -35,7 +35,7 @@
             ev.preventDefault();
             const data = ev.dataTransfer.getData("text");
             if(IsFull == false) {
-                ev.target.appendChild(document.getElementById(data));
+                ev.currentTarget.appendChild(document.getElementById(data));
                 IsFull = true;
             }
         }
