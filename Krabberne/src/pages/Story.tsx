@@ -1,5 +1,4 @@
 import React from "react";
-import StoryTeller from "../Components/StoryTeller";
 import SideBar from "../Components/SideBar";
 import ContentArea from "../Components/ContentArea";
 import { Link, Outlet } from "react-router";

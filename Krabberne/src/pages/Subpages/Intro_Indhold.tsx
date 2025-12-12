@@ -1,5 +1,3 @@
-import React from "react";
-
 function IntroText() {
   return (
     <div style={{ fontStyle: "italic", padding: "20px" }}>

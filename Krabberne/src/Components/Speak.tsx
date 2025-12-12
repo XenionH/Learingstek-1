@@ -1,4 +1,3 @@
-import React from "react";
 import Intro from "../assets/Sounds/Narrator_intro_01.mp3";
 import Outro from "../assets/Sounds/Narrator_outro_01.mp3";
 import IntroMision from "../assets/Sounds/Intro_fælles_01.mp3";
