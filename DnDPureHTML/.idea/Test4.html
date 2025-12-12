@@ -55,13 +55,9 @@
             
         }
 
-        function changeColorRed(element, clr) {
-    element.style.color = clr;
-}
+        function Næsteside(){
 
-function changeColorGreen(element, clr) {
-    element.style.color = clr;
-}
+        }
     </script>
     
 </head>
@@ -96,27 +92,36 @@ function changeColorGreen(element, clr) {
         </div>
         
         <div id="div1" ondrop="dropHandlerFillUp(event)"   ondragover="dragoverHandler(event)"> 
-            <h1 id="bigtext"> Int perler = 3 </h1>
+            <h1 id="bigtext"> (husk på bools, og sandt/falsk) </h1>
+            <br>
+            <h1 id="mediumtext"> (hvis tøjetBlevFundet er sandt){ </h1>
+            <h1 id="mediumtext"> bool krabberneFester = ____</h1>
+            <h1 id="mediumtext"> } </h1>
+ 
 
 
-            <p id="p3"> ________ Perler = 3</p>
         </div>
         
         <div id="div2" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
             <p id="p2"> Svarmuligheder</p>
-            <h1 id="FalskSvar" draggable="true" ondragstart="dragstartHandler(event)">Guldmønter</h1>
-            <h1 id="FalskSvar" draggable="true" ondragstart="dragstartHandler(event)">3</h1>
-            <h1 id="FalskSvar" draggable="true" ondragstart="dragstartHandler(event)">5</h1>
+            <h1 id="FalskSvar" draggable="true" ondragstart="dragstartHandler(event)">viGiverOp</h1>
+            <h1 id="FalskSvar" draggable="true" ondragstart="dragstartHandler(event)">krabberne</h1>
+            <h1 id="FalskSvar" draggable="true" ondragstart="dragstartHandler(event)">falsk</h1>
+                        <h1 id="ÆgteSvar" draggable="true" ondragstart="dragstartHandler(event)">sandt</h1>
             <h1 id="FalskSvar" draggable="true" ondragstart="dragstartHandler(event)">Boolean</h1>
-            <h1 id="FalskSvar" draggable="true" ondragstart="dragstartHandler(event)">Perler</h1>
-            <h1 id="ÆgteSvar" draggable="true" ondragstart="dragstartHandler(event)">Int</h1>
+            <h1 id="FalskSvar" draggable="true" ondragstart="dragstartHandler(event)">bool</h1>
         </div>
 
         
         <button onclick="evaluateAnswer()" id="AnswerButton">Aflever Svar</button>
+        <!--<a href="Test5.html">
+            <button id="NextPage"> Næste opgave</button>
+        </a>   -->
+        
         <a href="Test3.html">
-        <button id="NextPage"> Næste opgave</button>
-        </a>   
+            <button id="PriorPage"> Tidligere opgave</button>
+
+        </a>
 
         <div id="OpgaveInfo">
             <h2> Din opgave:</h2>
