@@ -1,7 +1,6 @@
 import React from "react";
 import SideNav from "./SideNav";
 import styles from "./Navbar.module.css";
-import { Link } from "react-router";
 
 interface SideBarProps {
   withSideNav: boolean;

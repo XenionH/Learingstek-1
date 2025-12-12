@@ -16,12 +16,12 @@ export function Home() {
       }}
     >
       <Link
-        to="/Teori"
+        to="/Intro"
         style={{
           textDecoration: "none",
           position: "absolute",
-          top: "94.8%",
-          left: "28.37%",
+          bottom: "5%",
+          left: "28%",
           transform: "translate(-20%, -50%)",
         }}
       >
@@ -40,7 +40,7 @@ export function Home() {
         style={{
           textDecoration: "none",
           position: "absolute",
-          top: "94.8%",
+          bottom: "5%",
           right: "19.1%",
           transform: "translate(-20%, -50%)",
         }}

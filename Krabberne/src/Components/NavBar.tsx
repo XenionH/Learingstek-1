@@ -2,7 +2,7 @@ import styles from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
 
 export function NavBar() {
-  const items = ["Teori", "Opgaver", "Story"];
+  const items = ["Teori", "Opgaver", "Historie"];
   const setActive = ({ isActive }: { isActive: boolean }): string =>
     isActive
       ? `${styles.topnavlink} ${styles.topnavactive}`
@@ -10,7 +10,7 @@ export function NavBar() {
 
   return (
     <>
-      <nav className={styles.topnav}>
+      <nav className={styles.topnav} style={{}}>
         {items.map((item) => (
           <NavLink to={`/${item}`} className={setActive} key={item}>
             <li>{item}</li>

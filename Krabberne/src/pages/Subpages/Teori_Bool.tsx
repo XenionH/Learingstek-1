@@ -1,4 +1,5 @@
 import Bold_Text from "../../Components/Bold_Text";
+
 const Teori_Bool = () => {
   return (
     <div
@@ -10,27 +11,29 @@ const Teori_Bool = () => {
         paddingBottom: "40px",
       }}
     >
-      PROFESSOR TANGSALAT <br /> Velkommen tilbage, krabber! <br />
+      <h5>PROFESSOR TANGSALAT</h5>
       <br />
-      Så har I lært en masse om <Bold_Text boldText="intergers" />, unger! I er
-      helt klar til at høre om en anden slags <Bold_Text boldText="variabel" />{" "}
-      nu, nemlig <Bold_Text boldText="booleans" />. De seje krabber kalder den
-      også bare for <Bold_Text boldText="bool" />. <br />
-      <br />
-      Som I ved kan <Bold_Text boldText="integers" /> have en talværdi. En{" "}
-      <Bold_Text boldText="booleans" /> er lidt anderledes; den kan hjælpe jer
-      med at huske om noget er enten <Bold_Text boldText="sandt" /> eller{" "}
-      <Bold_Text boldText="falsk!" /> I programmering kalder vi det også for
-      “true” (sandt) eller “false” (falsk). <br />
-      <br />
-      Så <Bold_Text boldText="booleans" /> bruger vi altså når vi skal beskrive
-      om noget er enten sandt eller falsk. En <Bold_Text boldText="bool" /> kan
-      KUN være enten det ene eller det andet.
-      <br />
-      <br />
-      Prøv at sig højt til jer selv: “jeg har stadig mine krabbemælketænder”.
-      Det kan i kun svare enten ja (“sandt”) eller nej (“falsk”) til, så i har
-      hermed brugt en <Bold_Text boldText="bool variabel" />.
+      <p>
+        {" "}
+        Milde makrel i er gode til <Bold_Text boldText="integers" />, mine små
+        krabber! Nu skal I lære en ny slags variabel:{" "}
+        <Bold_Text boldText="boolean" />. Superseje krabber kalder den bare for{" "}
+        <Bold_Text boldText="bool" />.
+      </p>
+      <p>
+        {" "}
+        Hvor <Bold_Text boldText="integers" /> gemmer tal, så gemmer en{" "}
+        <Bold_Text boldText="bool" /> noget helt andet: nemlig om noget er{" "}
+        <Bold_Text boldText="sandt" /> eller <Bold_Text boldText="falsk" />. Det
+        vigtige er; en <Bold_Text boldText="bool" /> kan kun være enten{" "}
+        <Bold_Text boldText="sandt" /> eller <Bold_Text boldText="falsk" />.
+      </p>{" "}
+      <p>
+        Prøv at sig højt til jer selv: ”jeg har stadig mine krabbemælketænder”.
+        Det kan i kun svare enten ja (det er <Bold_Text boldText="sandt" />
+        ), eller nej (det er <Bold_Text boldText="falsk" />) til. Bum! I har
+        lige brugt en <Bold_Text boldText="bool-variabel" />.
+      </p>
     </div>
   );
 };

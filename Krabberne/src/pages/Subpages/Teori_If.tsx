@@ -11,22 +11,25 @@ const Teori_If = () => {
         paddingBottom: "40px",
       }}
     >
-      PROFESSOR TANGSALAT <br />
-      I klarer jer supergodt unger, jeg kan ikke huske hvornår jeg sidst har set
-      så unge krabber have så god en forståelse! <br />
+      <h5>PROFESSOR TANGSALAT</h5> <br />I gør det helt fantastisk, mine små
+      krabber! Vi bygger videre på <Bold_Text boldText="booleans" />: nu skal i
+      høre om <Bold_Text boldText="if-statements" />.
       <br />
-      Vi smutter videre til næste niveau, og tager hul på noget der hedder{" "}
-      <Bold_Text boldText="If-statements" />. Det bygger faktisk på{" "}
-      <Bold_Text boldText="booleans" />, så jeg er sikker på at I kan følge med!{" "}
+      Et <Bold_Text boldText="if-statement " />
+      bruger vi når vi vil tjekke om ”noget er sandt”. Hvis det vi siger er
+      sandt - så sker der mere. Og hvis det vi siger ikke er sandt, ja så sker
+      der bare ingenting.
       <br />
       <br />
-      På simpelt krabbesprog så kan vi med et{" "}
-      <Bold_Text boldText="If-statement" /> “påstå noget”, og hvis påstanden er
-      sand, så sker der efterfølgende en handling. <br />
-      <br />
-      Forestil jer at I kommer ud i krabbekøkkenet en aften og leder efter noget
-      at spise. I spørger jer selv: “åh, hvis der ikke er flere havsaltstænger
-      tilbage” (påstand), “så må jeg jo bare gå til planktonchipsene”(handling).
+      Forestil jer at I smutter ud i krabbekøkkenet og leder efter snacks. I
+      tjekker med jer selv: <br /> <br />
+      <p style={{ marginLeft: "50px" }}>
+        <span style={{ fontStyle: "italic" }}>
+          “Hvis der ikke er flere havsaltstænger tilbage...” <br />-{">"}
+          <br />
+          “så tager jeg bare plankton-chips i stedet!”
+        </span>
+      </p>
     </div>
   );
 };

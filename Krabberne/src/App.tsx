@@ -15,6 +15,8 @@ import Story_Intro from "./pages/Subpages/Story_Intro";
 import Story_Int from "./pages/Subpages/Story_Int";
 import Story_Bool from "./pages/Subpages/Story_Bool";
 import Story_If from "./pages/Subpages/Story_If";
+import Intro from "./pages/Intro";
+import Outro from "./pages/Outro";
 
 function App() {
   return (
@@ -22,17 +24,24 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route element={<Layout />}>
+          <Route path="Intro" element={<Intro />} />
+          <Route path="Outro" element={<Outro />} />
+
           <Route path="Teori" element={<Teori />}>
+            <Route path="" element={<Teori_Int />} />
             <Route path="Int" element={<Teori_Int />} />
             <Route path="Bool" element={<Teori_Bool />} />
             <Route path="If" element={<Teori_If />} />
           </Route>
+
           <Route path="Opgaver" element={<Opgaver />}>
+            <Route path="" element={<Opgaver_Int />} />
             <Route path="Int" element={<Opgaver_Int />} />
             <Route path="Bool" element={<Opgaver_Bool />} />
             <Route path="If" element={<Opgaver_If />} />
           </Route>
-          <Route path="/Story" element={<Story />}>
+
+          <Route path="/Historie" element={<Story />}>
             <Route path="" element={<Story_Intro />} />
             <Route path="Int" element={<Story_Int />} />
             <Route path="Bool" element={<Story_Bool />} />

@@ -13,30 +13,23 @@ function Teori_Int() {
     >
       <p>PROFESSOR TANGSALAT</p>
       <p>
-        Hvem er klar på at kode??
+        Er i klar til at kode, små krabber?
         <br />
         <br />
         Først skal i høre om det helt grundlæggende: nemlig{" "}
-        <Bold_Text boldText=" variabler" />. Nej ikke vabler –{" "}
-        <Bold_Text boldText=" variabler" />. Tænk på dem som jeres skoletasker,
-        som hjælper jer med at holde på alle jeres vigtige bøger og
-        torskerognsmadder.
+        <Bold_Text boldText="variabler" />. Nej nej, ikke vabler –{" "}
+        <Bold_Text boldText="variabler" />.
         <br />
         <br />
-        I programmering er de beholdere der gemmer på tal eller bogstaver.
-        Skoletaske eller beholder - ideen er at i nemt kan finde torskerognen
-        eller tallene frem igen senere.
+        <Bold_Text boldText="Variabler" /> er som små skattekister vi kan gemme
+        ting i. Ligesom jeres skoletasker gemmer på alle jeres vigtige bøger og
+        torskerognsmadder, så i kan finde dem frem igen senere.
         <br />
         <br />
         Den allerførste <Bold_Text boldText="variabel" /> i skal kende kalder vi{" "}
-        <Bold_Text boldText="interger" />, eller som de seje krabber kalder den:{" "}
-        <Bold_Text boldText="int" />. Den beholder kan kun gemme på de helt
-        almindelige tal - i ved; 3, 37, 122.
-        <br />
-        <br />
-        Forestil jer en sunken skattekiste med guldmønter i. I programmering vil
-        man bruge en <Bold_Text boldText="int" /> til at fortælle præcis hvor
-        mange guldmønter der er i kisten, f.eks. 12 guldmønter.
+        <Bold_Text boldText="integer" />. De seje krabber kalder den også bare{" "}
+        <Bold_Text boldText="int" />. Den kiste gemmer på helt almindelige tal -
+        i ved, som 3, eller 12.
       </p>
     </div>
   );
