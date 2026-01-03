@@ -7,7 +7,7 @@
     background-color: #333333;
     position: sticky;
     top: 0;
-    font-size: 24px;
+    font-size: 20px;
     z-index: 10;
   }
 }
@@ -25,16 +25,20 @@
 
 .topnavlink a {
   display: block;
-  padding: 14px 36px;
+  padding: 10px 20px;
   color: #f1f1f1;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
 }
 
+.topnavlink a li {
+  font-weight: bold;
+}
+
 .topnavlink:hover:not(.topnavactive) {
   background-color: #111111;
-  color: #a1a1a1;
+  color: #ffffff;
 }
 
 .topnavlink a:hover:not(.topnavactive a) {
@@ -47,12 +51,12 @@
 }
 
 .topnavactive a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .sidebar {
   height: 100%;
-  width: 200px;
+  width: 250px;
   display: block;
   position: fixed;
   left: 0;

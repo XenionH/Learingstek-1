@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import image from "../assets/image.png";
+import image from "../assets/Image.jpg";
 
 export function Home() {
   return (
@@ -16,7 +16,7 @@ export function Home() {
       }}
     >
       <Link
-        to="/Intro"
+        to="/Historie"
         style={{
           textDecoration: "none",
           position: "absolute",
@@ -32,17 +32,22 @@ export function Home() {
             width: "22.8vw",
             position: "relative",
             borderRadius: "50px",
-            backgroundColor: "transparent",
+            backgroundColor: "#e1f57d",
+            color: "black"
           }}
-        ></button>
+        >
+          Start Spil
+        </button>
       </Link>
-      <span
+      <Link
+        to={"/Intro"}
         style={{
           textDecoration: "none",
           position: "absolute",
           bottom: "5%",
           right: "19.1%",
           transform: "translate(-20%, -50%)",
+          color: "black"
         }}
       >
         <button
@@ -55,9 +60,9 @@ export function Home() {
             backgroundColor: "#e1f57d",
           }}
         >
-          Til lærere (WIP)
+          Til lærere
         </button>
-      </span>
+      </Link>
     </div>
   );
 }

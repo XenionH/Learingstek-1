@@ -17,18 +17,17 @@ function Teori_Int() {
         <br />
         <br />
         Først skal i høre om det helt grundlæggende: nemlig{" "}
-        <Bold_Text boldText="variabler" />. Nej nej, ikke vabler –{" "}
-        <Bold_Text boldText="variabler" />.
+        <Bold_Text boldText="VARIABLER" />. Nej nej, ikke vabler –{" "}
+        <Bold_Text boldText="VARIABLER" />.
         <br />
         <br />
-        <Bold_Text boldText="Variabler" /> er som små skattekister vi kan gemme
-        ting i. Ligesom jeres skoletasker gemmer på alle jeres vigtige bøger og
-        torskerognsmadder, så i kan finde dem frem igen senere.
+        <Bold_Text boldText="VARIABLER" /> er som små skattekister vi kan gemme
+        ting i.
         <br />
         <br />
-        Den allerførste <Bold_Text boldText="variabel" /> i skal kende kalder vi{" "}
-        <Bold_Text boldText="integer" />. De seje krabber kalder den også bare{" "}
-        <Bold_Text boldText="int" />. Den kiste gemmer på helt almindelige tal -
+        Den allerførste <Bold_Text boldText="VARIABEL" /> i skal kende, kalder vi{" "}
+        <Bold_Text boldText="INTEGER" />. De seje krabber kalder den også bare{" "}
+        <Bold_Text boldText="INT" />. Den kiste gemmer på helt almindelige tal -
         i ved, som 3, eller 12.
       </p>
     </div>

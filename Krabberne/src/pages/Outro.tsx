@@ -4,7 +4,7 @@ import OutroText from "./Subpages/OutroText";
 
 function Outro() {
   return (
-    <section style={{ left: "100px", marginLeft: "-100px" }}>
+    <section style={{ left: "300px", marginLeft: "-100px" }}>
       <ContentArea version={2}>
         <Speak />
         <OutroText />

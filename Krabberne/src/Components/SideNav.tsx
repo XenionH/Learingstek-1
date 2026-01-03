@@ -4,9 +4,9 @@ import { DropDown } from "./DropDown";
 import { Link } from "react-router";
 
 interface Props {
-  itemcategories: string[];
+  itemcategories?: string[];
   items?: string[][];
-  dropdowns: boolean;
+  dropdowns?: boolean;
   sendData?: any;
 }
 
@@ -16,6 +16,9 @@ function SideNav({ itemcategories, items, dropdowns, sendData }: Props) {
   function handleClick(item: string) {
     setData(item);
   }
+
+  if (!items) return <div></div>;
+
 
   return (
     <div>
@@ -28,8 +31,8 @@ function SideNav({ itemcategories, items, dropdowns, sendData }: Props) {
               id="category"
               style={{ textDecorationLine: "underline", fontSize: "24px" }}
             >
-              {itemcategories.length > 1
-                ? itemcategories[Index]
+              {itemcategories?.length && itemcategories?.length > 1
+                ? itemcategories?.[Index]
                 : `Kategorier:`}
             </a>
             {item.map((subItem) => (

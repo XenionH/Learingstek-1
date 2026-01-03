@@ -1,11 +1,9 @@
 import { Outlet } from "react-router";
-import { NavBar } from "./Components/NavBar";
 import image from "./assets/10516317.jpg";
 
 export function Layout() {
   return (
     <>
-      <NavBar />
       <main
         style={{
           backgroundImage: `url(${image})`,

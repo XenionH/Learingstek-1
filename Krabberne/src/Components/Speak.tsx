@@ -1,12 +1,11 @@
-import Intro from "../assets/Sounds/Narrator_intro_01.mp3";
-import Outro from "../assets/Sounds/Narrator_outro_01.mp3";
-import IntroMision from "../assets/Sounds/Intro_fælles_01.mp3";
-import Mission1 from "../assets/Sounds/Mission1_fælles_01.mp3";
-import Mission2 from "../assets/Sounds/Mission2_fælles_01.mp3";
-import Mission3 from "../assets/Sounds/Mission3_fælles_01.mp3";
+import Outro from "../assets/Sounds/Outro_speak_01.mp3";
+import IntroMision from "../assets/Sounds/Intro_fælles_02.mp3";
+import Mission1 from "../assets/Sounds/Mission1_fælles_02.mp3";
+import Mission2 from "../assets/Sounds/Mission2_fælles_02.mp3";
+import Mission3 from "../assets/Sounds/Mission3_fælles_02.mp3";
 import Prof1 from "../assets/Sounds/ProfTangsalat_integers_02.mp3";
-import Prof2 from "../assets/Sounds/ProfTangsalat_bools_01.mp3";
-import Prof3 from "../assets/Sounds/ProfTangsalat_ifstatements_01.mp3";
+import Prof2 from "../assets/Sounds/ProfTangsalat_bools_02.mp3";
+import Prof3 from "../assets/Sounds/ProfTangsalat_if-statements_02.mp3";
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Button } from "react-bootstrap";
@@ -19,7 +18,6 @@ function Speak() {
     new Audio(
       [
         "null",
-        Intro,
         IntroMision,
         Prof1,
         Prof2,
@@ -36,7 +34,6 @@ function Speak() {
   }, [currentSoundIndex]);
   const sounds = [
     "null",
-    Intro,
     IntroMision,
     Prof1,
     Prof2,
@@ -58,6 +55,15 @@ function Speak() {
     switch (location.pathname) {
       case "/Teori":
       case "/Teori/Int": {
+        const newAudioRef = new Audio(sounds[2]);
+        if (audioRef.current.src !== newAudioRef.src) {
+          setCurrentSoundIndex(2);
+          audioRef.current.src = sounds[2];
+        }
+        break;
+      }
+
+      case "/Teori/Bool": {
         const newAudioRef = new Audio(sounds[3]);
         if (audioRef.current.src !== newAudioRef.src) {
           setCurrentSoundIndex(3);
@@ -65,28 +71,11 @@ function Speak() {
         }
         break;
       }
-
-      case "/Teori/Bool": {
+      case "/Teori/If": {
         const newAudioRef = new Audio(sounds[4]);
         if (audioRef.current.src !== newAudioRef.src) {
           setCurrentSoundIndex(4);
           audioRef.current.src = sounds[4];
-        }
-        break;
-      }
-      case "/Teori/If": {
-        const newAudioRef = new Audio(sounds[5]);
-        if (audioRef.current.src !== newAudioRef.src) {
-          setCurrentSoundIndex(5);
-          audioRef.current.src = sounds[5];
-        }
-        break;
-      }
-      case "/Intro": {
-        const newAudioRef = new Audio(sounds[1]);
-        if (audioRef.current.src !== newAudioRef.src) {
-          setCurrentSoundIndex(1);
-          audioRef.current.src = sounds[1];
         }
         break;
       }
@@ -98,7 +87,15 @@ function Speak() {
         }
         break;
       }
-      case "/Historie/Int": {
+      case "/Opgaver/Int": {
+        const newAudioRef = new Audio(sounds[5]);
+        if (audioRef.current.src !== newAudioRef.src) {
+          setCurrentSoundIndex(5);
+          audioRef.current.src = sounds[5];
+        }
+        break;
+      }
+      case "/Opgaver/Bool": {
         const newAudioRef = new Audio(sounds[6]);
         if (audioRef.current.src !== newAudioRef.src) {
           setCurrentSoundIndex(6);
@@ -106,7 +103,7 @@ function Speak() {
         }
         break;
       }
-      case "/Historie/Bool": {
+      case "/Opgaver/If": {
         const newAudioRef = new Audio(sounds[7]);
         if (audioRef.current.src !== newAudioRef.src) {
           setCurrentSoundIndex(7);
@@ -114,19 +111,11 @@ function Speak() {
         }
         break;
       }
-      case "/Historie/If": {
+      case "/Outro": {
         const newAudioRef = new Audio(sounds[8]);
         if (audioRef.current.src !== newAudioRef.src) {
           setCurrentSoundIndex(8);
           audioRef.current.src = sounds[8];
-        }
-        break;
-      }
-      case "/Outro": {
-        const newAudioRef = new Audio(sounds[9]);
-        if (audioRef.current.src !== newAudioRef.src) {
-          setCurrentSoundIndex(9);
-          audioRef.current.src = sounds[9];
         }
         break;
       }

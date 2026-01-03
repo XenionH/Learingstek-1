@@ -11,26 +11,15 @@ const Teori_If = () => {
         paddingBottom: "40px",
       }}
     >
-      <h5>PROFESSOR TANGSALAT</h5> <br />I gør det helt fantastisk, mine små
-      krabber! Vi bygger videre på <Bold_Text boldText="booleans" />: nu skal i
-      høre om <Bold_Text boldText="if-statements" />.
+      <h5>PROFESSOR TANGSALAT</h5> <br />
+      I gør det helt fantastisk, mine små
+      krabber! Vi bygger videre på <Bold_Text boldText="BOOLEANS" />: nu skal i
+      høre om <Bold_Text boldText="IF-STATEMENTS" />.
       <br />
-      Et <Bold_Text boldText="if-statement " />
-      bruger vi når vi vil tjekke om ”noget er sandt”. Hvis det vi siger er
-      sandt - så sker der mere. Og hvis det vi siger ikke er sandt, ja så sker
-      der bare ingenting.
-      <br />
-      <br />
-      Forestil jer at I smutter ud i krabbekøkkenet og leder efter snacks. I
-      tjekker med jer selv: <br /> <br />
-      <p style={{ marginLeft: "50px" }}>
-        <span style={{ fontStyle: "italic" }}>
-          “Hvis der ikke er flere havsaltstænger tilbage...” <br />-{">"}
-          <br />
-          “så tager jeg bare plankton-chips i stedet!”
-        </span>
-      </p>
-    </div>
+      Et <Bold_Text boldText="IF-STATEMENT" />
+      bruger vi når vi vil tjekke om ”noget er sandt”. <Bold_Text boldText="Hvis" /> det vi påstår ER sandt
+      - <Bold_Text boldText="så" /> sker der mere. Og hvis det vi siger IKKE er sandt...ja så sker der bare ingenting.
+    </div >
   );
 };
 

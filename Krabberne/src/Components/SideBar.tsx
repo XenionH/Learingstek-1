@@ -1,25 +1,31 @@
 import React from "react";
+import type { ReactNode } from "react";
 import SideNav from "./SideNav";
 import styles from "./Navbar.module.css";
 
 interface SideBarProps {
-  withSideNav: boolean;
+
   sideNavItems?: string[][];
-  sideNavItemCategories: string[];
-  sendDataFromSideNav: any;
-  dropdown: boolean;
+  sideNavItemCategories?: string[];
+  sendDataFromSideNav?: any;
+  dropdown?: boolean;
+  children?: ReactNode;
 }
+
+
 
 function SideBar(props: SideBarProps) {
   const [, setDataFromSideNav] = React.useState("");
+
+  const hasSideNav = !!props.sideNavItems?.length;
 
   function handleData(data: any) {
     setDataFromSideNav(data);
     props.sendDataFromSideNav(data);
   }
 
-  if (!props.withSideNav) {
-    return <div></div>;
+  if (!hasSideNav) {
+    return <div className={styles.sidebar}>{props.children}</div>;
   } else {
     return (
       <div className={styles.sidebar}>
@@ -29,6 +35,7 @@ function SideBar(props: SideBarProps) {
           itemcategories={props.sideNavItemCategories}
           dropdowns={props.dropdown}
         />
+        {props.children}
       </div>
     );
   }

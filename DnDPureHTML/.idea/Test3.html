@@ -24,7 +24,7 @@
             ev.preventDefault();
             const data = ev.dataTransfer.getData("text");
            if(IsFull==false) {
-                ev.currentTarget.appendChild(document.getElementById(data));
+            ev.currentTarget.appendChild(document.getElementById(data));
            }
            if(IsFull==true){
                 ev.currentTarget.appendChild(document.getElementById(data));
@@ -66,33 +66,34 @@
 
 
 <body>
-<div id="background">
+    <div id="background">
         <div id="sidenav"> </div>
 
-<h1 class="headline">
-        <button>
-            Teori
-        </button>
-    </a>
-        <button>
-            Opgaver
-        </button>
-    </a>
+    <h1 class="headline">
+        <a>S
+            <button>
+                Teori
+            </button>
+        </a>
+            <button>
+                Opgaver
+            </button>
+        </a>
 
-        <button>
-            Historie
-        </button>
-    </a>
+            <button>
+                Historie
+            </button>
+        </a>
    
     
-</h1>
+    </h1>
         <div id="infoBox">
             <br>
             <p id="CT1">Her vises dit resultat</p>
         </div>
         
         <div id="div1" ondrop="dropHandlerFillUp(event)"   ondragover="dragoverHandler(event)"> 
-            <h1 id="bigtext"> Bool klarTilFest = sandt </h1>
+            <h1 id="bigtext"> Bool harFestTøjPå = sandt </h1>
 
 
             <p id="p3">bool ________ = sandt</p>
