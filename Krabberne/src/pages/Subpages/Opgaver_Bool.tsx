@@ -95,8 +95,22 @@ function Opgaver_Bool() {
       ) : (
         <span style={{ color: "red", fontWeight: "bold" }}> ✘</span>
       ))}
-      <Button variant="warning" onClick={handleCheck} style={{ position: "absolute", bottom: 0, left: 30, margin: "25px" }}>Tjek Svar</Button>
-      <Link style={{ pointerEvents: (checked && (line1Correct && line2Correct && line3Correct)) ? "auto" : "none" }} to={`${getDestination()}`} >
+      <Button variant="warning" onClick={handleCheck} style={{ position: "absolute", bottom: 0, left: "40%", margin: "25px" }}>Tjek Svar</Button>
+      <Link to={`${getDestination(true)}`} >
+        <Button
+          variant="secondary"
+          style={{
+            display: "block",
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            margin: "25px",
+          }}
+        >
+          Tilbage
+        </Button>
+      </Link>
+      <Link style={{ pointerEvents: (checked && (line1Correct && line2Correct && line3Correct)) ? "auto" : "none" }} to={`${getDestination(false)}`} >
         <Button disabled={!checked && !(line1Correct && line2Correct && line3Correct)}
           variant="secondary"
           style={{
@@ -108,7 +122,7 @@ function Opgaver_Bool() {
             opacity: checked && (line1Correct && line2Correct && line3Correct) ? 1 : 0.5,
           }}
         >
-          Til historien
+          Videre
         </Button>
       </Link>
 

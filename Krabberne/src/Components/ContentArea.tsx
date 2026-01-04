@@ -1,7 +1,7 @@
 import { type ReactNode } from "react";
 
 interface ContentAreaProps {
-  version?: 0 | 1 | 2 | 3 | 4 | 5 | 6;
+  version?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
   children: ReactNode;
 }
 
@@ -120,7 +120,7 @@ function ContentArea({ version, children }: ContentAreaProps) {
             position: "relative",
             display: "block",
             background: "rgba(255, 255, 255, 0.8)",
-            maxWidth: "800px",
+            maxWidth: "700px",
             minWidth: "400px",
             border: "black, solid, 3px",
             borderRadius: "40px",
@@ -154,6 +154,26 @@ function ContentArea({ version, children }: ContentAreaProps) {
         </div>
 
       );
+    case 7:
+      return (
+        <div
+          style={{
+            position: "relative",
+            display: "block",
+            background: "rgba(255, 255, 255, 0.8)",
+            minWidth: "300px",
+            border: "black, solid, 3px",
+            borderRadius: "40px",
+            padding: "20px",
+            maxHeight: "100vh",
+            maxWidth: "350px",
+            flexGrow: "10"
+          }}
+        >
+          {children}
+        </div>)
   }
+
+
 }
 export default ContentArea;

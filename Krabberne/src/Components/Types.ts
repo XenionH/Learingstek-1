@@ -1,9 +1,26 @@
+export type Solution = Partial<Record<SlotId, SlotRule>>;
+
 export type SlotRule =
   | { type: "id"; itemId: ItemId }
   | { type: "label"; label: string }
   | { type: "oneOfLabels"; labels: string[] };
 
-export type Solution = Partial<Record<SlotId, SlotRule>>;
+export type ItemId = string;
+
+export interface Item {
+  id: ItemId;
+  label: string;
+}
+
+export type ItemLocation = Record<ItemId, SlotId>;
+
+export interface Task {
+  id: string;
+  items: Item[];
+  startSlots: StartSlotId[];
+  slots: SlotId[];
+  solution: Solution;
+}
 
 export type StartSlotId =
   | "start-1"
@@ -13,8 +30,6 @@ export type StartSlotId =
   | "start-5"
   | "start-6"
   | "start-7";
-
-
 
 export type SlotId =
   | StartSlotId
@@ -26,12 +41,7 @@ export type SlotId =
   | "slot-6";
 
 
-export type ItemId = string
 
-export interface Item {
-  id: ItemId;
-  label: string;
-}
 
 export const ITEM_HOME: Record<ItemId, StartSlotId> = {
   "Int": "start-1",
@@ -43,11 +53,4 @@ export const ITEM_HOME: Record<ItemId, StartSlotId> = {
   "ClaraSkalTilFest": "start-7",
 };
 
-export type ItemLocation = Record<ItemId, SlotId>;
 
-export interface Task {
-  items: Item[];
-  startSlots: StartSlotId[];
-  slots: SlotId[];
-  solution: Solution;
-}

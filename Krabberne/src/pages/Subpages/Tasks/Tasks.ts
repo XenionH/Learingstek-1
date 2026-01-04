@@ -1,6 +1,6 @@
-import type { Item, SlotId, Solution, StartSlotId,Task} from "../../../Components/Types";
+import type { Item, SlotId, Solution, StartSlotId, Task} from "../../../Components/Types";
 
-export const TASK1 = {
+export const TASK1 : Task = {
   id: "Int",
   items: [{id: "Int1", label: "Int"}, {id: "Int2", label: "Int"}, {id: "Int3", label: "Int"}, {id: "5", label: "5"}, {id: "Perler", label: "Perler"}, {id: "14", label: "14"},{id:"Guldmønter", label: "Guldmønter"}] as Item[],
   startSlots: ["start-1", "start-2", "start-3","start-4","start-5","start-6", "start-7"] as StartSlotId[],
@@ -15,7 +15,7 @@ export const TASK1 = {
   } satisfies Solution,
 };
 
-export const TASK2 = {
+export const TASK2 : Task = {
   id: "Bool",
   items: [
     {id: "Bool1", label: "Bool"},
@@ -36,7 +36,7 @@ export const TASK2 = {
     "slot-6": { type: "label", label: "Sandt" },
   } satisfies Solution,
 };
-export const TASK3 = {
+export const TASK3 : Task = {
   id: "If",
   items: [{id: "Int", label: "Int"},
      {id: "KlaraSkalTilFest", label: "KlaraSkalTilFest"},

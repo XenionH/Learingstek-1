@@ -13,7 +13,21 @@ export function Story() {
       <ContentArea version={2}>
         <Speak />
         <Story_Intro />
-        <Link to={`${getDestination()}`}>
+        <Link to={`${getDestination(true)}`}>
+          <Button
+            variant="secondary"
+            style={{
+              display: "block",
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              margin: "25px",
+            }}
+          >
+            Tilbage
+          </Button>
+        </Link>
+        <Link to={`${getDestination(false)}`}>
           <Button
             variant="secondary"
             style={{

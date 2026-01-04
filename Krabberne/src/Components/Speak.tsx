@@ -80,10 +80,10 @@ function Speak() {
         break;
       }
       case "/Historie": {
-        const newAudioRef = new Audio(sounds[2]);
+        const newAudioRef = new Audio(sounds[1]);
         if (audioRef.current.src !== newAudioRef.src) {
-          setCurrentSoundIndex(2);
-          audioRef.current.src = sounds[2];
+          setCurrentSoundIndex(1);
+          audioRef.current.src = sounds[1];
         }
         break;
       }
