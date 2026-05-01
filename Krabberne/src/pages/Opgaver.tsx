@@ -64,7 +64,6 @@ export function Opgaver() {
         ([id, slot]) => slot === targetSlot && id !== itemId
       )?.[0] as ItemId | undefined;
 
-      // Swap hvis nødvendigt
       if (itemInTarget) {
         return {
           ...prev,

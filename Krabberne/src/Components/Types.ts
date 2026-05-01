@@ -5,7 +5,7 @@ export type SlotRule =
   | { type: "label"; label: string }
   | { type: "oneOfLabels"; labels: string[] };
 
-export type ItemId = string;
+export type ItemId = string;  
 
 export interface Item {
   id: ItemId;
@@ -39,8 +39,6 @@ export type SlotId =
   | "slot-4"
   | "slot-5"
   | "slot-6";
-
-
 
 
 export const ITEM_HOME: Record<ItemId, StartSlotId> = {

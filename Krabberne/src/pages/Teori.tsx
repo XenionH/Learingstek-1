@@ -11,7 +11,6 @@ import Int_Kiste from "../assets/Images/int_opg2.jpg"
 export function Teori() {
   return (
     <>
-
       <section style={{ display: "flex" }}>
         <ContentArea version={2}>
           <Speak />
